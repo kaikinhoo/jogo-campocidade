@@ -4,53 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amazônia: Pulmão do Mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #e8f5e9;
+      box-sizing: border-box;
     }
+    body {
+      font-family: 'Edu VIC WA NT Hand', cursive;
+      background-color: #f1f8f4;
+      color: #2e7d32;
+    }
+
     header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 20px 0;
+      background-size: cover;
+      background-position: center;
+      color: rgb(44, 184, 1);
       text-align: center;
+      padding: 100px 20px 60px;
     }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: auto;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
     nav {
-      background-color: #43a047;
-      text-align: center;
-      padding: 10px;
+      background-color: #388e3c;
+      display: flex;
+      justify-content: center;
+      padding: 15px 10px;
+      flex-wrap: wrap;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 10px 20px;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #caffcb;
+    }
+
     section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: rgb(232, 247, 236);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
+
+    section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
     h2 {
       color: #1b5e20;
+      margin-bottom: 10px;
     }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
     footer {
       background-color: #2e7d32;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      section {
+        margin: 20px;
+      }
     }
   </style>
 </head>
 <body>
-    <img src="Cupula-da-Amazonia-1024x512.jpg" alt=" foto da amzonia ">
+
   <header>
     <h1>Amazônia: Pulmão do Mundo</h1>
-    <p>Conheça a importância da maior floresta tropical do planeta</p>
+    <p>Explore a riqueza natural, a biodiversidade e os desafios de uma das maiores florestas do planeta</p>
   </header>
 
   <nav>
@@ -62,30 +124,43 @@
 
   <section id="sobre">
     <h2>Sobre a Amazônia</h2>
-    <p>A Floresta Amazônica é a maior floresta tropical do mundo, cobrindo cerca de 5,5 milhões de km². Ela se estende por nove países da América do Sul, com a maior parte localizada no Brasil.</p>
+    <p>A Floresta Amazônica cobre cerca de 5,5 milhões de km² e se estende por nove países sul-americanos, sendo o Brasil o detentor de aproximadamente 60% de sua área. É um dos principais ecossistemas do planeta, fundamental para o equilíbrio climático global.</p>
+    <img src="Cupula-da-Amazonia-1024x512.jpg" alt="Vista aérea da Amazônia">
+    <p>A floresta desempenha papel vital na produção de oxigênio, regulação do ciclo da água e abriga milhares de espécies de flora e fauna. Além disso, a Amazônia é o lar de centenas de comunidades indígenas com vasto conhecimento ecológico e cultural.</p>
   </section>
 
   <section id="biodiversidade">
     <h2>Biodiversidade</h2>
-    <p>A Amazônia abriga aproximadamente 10% de todas as espécies conhecidas do mundo, incluindo milhares de tipos de plantas, animais, peixes e insetos. É um dos ecossistemas mais ricos e complexos do planeta.</p>
+    <p>Estima-se que mais de 30 mil espécies de plantas, 1.300 espécies de aves, 430 de mamíferos e milhões de insetos vivam na Amazônia. Muitas dessas espécies ainda não foram catalogadas.</p>
+    <img src="images.jpeg" alt="Animais da floresta">
+    <p>Entre os animais emblemáticos da região estão a onça-pintada, o boto-cor-de-rosa, a arara-azul e o tamanduá-bandeira. A flora inclui árvores gigantes como a seringueira, o castanheiro e a vitória-régia.</p>
   </section>
 
   <section id="ameacas">
     <h2>Ameaças</h2>
-    <p>Desmatamento, queimadas ilegais, mineração e expansão agropecuária estão entre as principais ameaças à floresta. A destruição da Amazônia impacta o clima global e ameaça espécies em extinção.</p>
+    <p>A Amazônia enfrenta diversas ameaças, principalmente causadas por ações humanas:</p>
+    <ul>
+      <li><strong>Desmatamento:</strong> causado pela expansão agropecuária e exploração ilegal de madeira.</li>
+      <li><strong>Queimadas:</strong> provocadas para limpar áreas e ampliar pastagens.</li>
+      <li><strong>Garimpo ilegal:</strong> contamina rios com mercúrio e degrada o solo.</li>
+      <li><strong>Grandes obras:</strong> como hidrelétricas e estradas que fragmentam habitats.</li>
+    </ul>
+    <img src="Captura de tela_2025-06-06_15-28-35.png" alt="Desmatamento na Amazônia">
+    <p>Essas práticas colocam em risco não só o ecossistema local, mas também o equilíbrio climático global.</p>
   </section>
 
   <section id="curiosidades">
     <h2>Curiosidades</h2>
     <ul>
-      <li>O rio Amazonas é o maior do mundo em volume de água.</li>
-      <li>Mais de 400 povos indígenas vivem na região.</li>
-      <li>A floresta ajuda a regular o clima do planeta.</li>
+      <li>O rio Amazonas é o maior em volume de água do mundo.</li>
+      <li>A floresta já existia há mais de 55 milhões de anos.</li>
+      <li>Mais de 400 povos indígenas habitam a região, muitos com línguas e culturas próprias.</li>
+      <li>A Amazônia produz cerca de 20% do oxigênio atmosférico do planeta.</li>
     </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 Projeto Amazônia. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Amazônia Viva | Desenvolvido com 💚 por amantes da natureza</p>
   </footer>
 
 </body>
